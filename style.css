@@ -7,6 +7,14 @@
     border: none;
 }
 
+:root{
+    --fonte:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    --cor-texto: #fff;
+    --cor-de-fundo-login:#ffffffa9;
+    --cor-fundo-botao:#001316;
+    --cor-fundo-botao-hover:#001e24;
+}
+
 body{
     display: flex;
     flex-direction: column;
@@ -17,7 +25,7 @@ body{
     background-image: url(./imagem.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: var(--fonte);
 }
 
 main{
@@ -26,7 +34,7 @@ main{
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    background-color: #ffffffa9;
+    background-color: var(--cor-de-fundo-login);
     border-radius: .5rem;
     padding: 1rem;
     transform: translateX(-400px);
@@ -52,7 +60,7 @@ main form input{
 }
 
 main form input:focus{
-    outline: #001316 solid .18rem;
+    outline: var(--cor-fundo-botao) solid .18rem;
 }
 
 main form button{
@@ -60,13 +68,13 @@ main form button{
     padding: .5rem;
     font-size: 1rem;
     font-weight: 700;
-    background-color: #001316;
+    background-color: var(--cor-fundo-botao);
     width: 100%;
-    color: #fff;
+    color: var(--cor-texto);
     margin-top: 1rem;
 }
 main form button:hover{
-    background-color: #001e24;
+    background-color: var(--cor-fundo-botao-hover);
 }
 
 @keyframes slideIn{
