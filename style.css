@@ -73,6 +73,7 @@ main form button{
     color: var(--cor-texto);
     margin-top: 1rem;
 }
+
 main form button:hover{
     background-color: var(--cor-fundo-botao-hover);
 }
